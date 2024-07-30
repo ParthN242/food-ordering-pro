@@ -21,7 +21,7 @@ import Orders from "./Pages/Orders/Orders";
 import OrderItems from "./Pages/Orders/OrderItems";
 import Context, { UserContext } from "./Context/Context";
 
-axios.defaults.baseURL = import.meta.env.VITE_BACKEND_URL_0;
+axios.defaults.baseURL = import.meta.env.VITE_BACKEND_URL;
 axios.defaults.headers.post["Content-Type"] = "application/json";
 axios.defaults.withCredentials = true;
 
