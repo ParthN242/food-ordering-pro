@@ -50,7 +50,10 @@ function App() {
             <Route path="/orders" element={<Orders />} />
             <Route path="/orders/:id" element={<OrderItems />} />
             <Route path="/practice" element={<Practice />} />
-            <Route path="/practice-route" element={<>Practice Route</>} />
+            <Route
+              path="/practice-route"
+              element={<>----Change Practice Text----</>}
+            />
           </Routes>
           <Footer />
         </Router>
