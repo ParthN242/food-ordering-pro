@@ -19,9 +19,10 @@ import Cart from "./Pages/Cart/Cart";
 import Payment from "./Pages/Payment/Payment";
 import Orders from "./Pages/Orders/Orders";
 import OrderItems from "./Pages/Orders/OrderItems";
-import Context, { UserContext } from "./Context/Context";
+import Context from "./Context/Context";
+import Practice from "./Pages/Practice/Pratice";
 
-axios.defaults.baseURL = import.meta.env.VITE_BACKEND_URL;
+axios.defaults.baseURL = import.meta.env.VITE_BACKEND_URL_0;
 axios.defaults.headers.post["Content-Type"] = "application/json";
 axios.defaults.withCredentials = true;
 
@@ -48,6 +49,7 @@ function App() {
             <Route path="/payment" element={<Payment />} />
             <Route path="/orders" element={<Orders />} />
             <Route path="/orders/:id" element={<OrderItems />} />
+            <Route path="/practice" element={<Practice />} />
           </Routes>
           <Footer />
         </Router>
