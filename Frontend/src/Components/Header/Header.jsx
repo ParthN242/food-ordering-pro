@@ -1,4 +1,4 @@
-import React, { useContext, useState } from "react";
+import { useContext, useState } from "react";
 import { Link } from "react-router-dom";
 import { MdOutlineShoppingCart } from "react-icons/md";
 import { HiOutlineBars3BottomLeft } from "react-icons/hi2";
@@ -109,6 +109,7 @@ const Header = () => {
           </Link>
           <Link to={"/"}>Home</Link>
           <Link to={"/menu"}>Menu</Link>
+          <Link to={"/practice"}>Practice</Link>
           <a href={"#about"}>About</a>
         </div>
         <div className="flex items-center gap-4">
